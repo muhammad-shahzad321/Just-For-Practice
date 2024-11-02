@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #179464;
+  }
+  
+  .form-wrapper {
+    width: 600px; /* Adjust width for medium size */
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #226e5b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .company-name {
+    text-align: center;
+    color: #39c7b3; /* Adjust color as desired */
+    font-size: 24px; /* Adjust font size for medium heading */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+  

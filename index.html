@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Company Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-wrapper">
+    <h1 class="company-name">ABC Company Registration</h1>
+    <form id="registration-form" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="fatherName">Father Name:</label>
+        <input type="text" id="fatherName" name="fatherName" required>
+      </div>
+      <div class="form-group">
+        <label for="studentCnic">Student CNIC:</label>
+        <input type="text" id="studentCnic" name="studentCnic" pattern="[0-9]{13-15}" title="Please enter a valid CNIC number">
+      </div>
+      <div class="form-group">
+        <label for="qualification">Qualification:</label>
+        <input type="text" id="qualification" name="qualification" required>
+      </div>
+      <div class="form-group">
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+      </div>
+      <div class="form-group">
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+          <option value="">Select...</option>
+          <option value="webdev">Web Development</option>
+          <option value="python">Python</option>
+          <option value="cybercrime">Cyber Crime</option>
+          <option value="ai">AI</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="campus">Select Campus:</label>
+        <select id="campus" name="campus" required>
+          <option value="">Select...</option>
+          <option value="bhadurabad">Bhadurabad</option>
+          <option value="saddar">Saddar</option>
+          <option value="gulshan">Gulshan</option>
+          <option value="malir">Malir</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="profilePicture">Profile Picture:</label>
+        <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+      </div>
+      <div class="form-group">
+        <label for="comments">Comments (Optional):</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
